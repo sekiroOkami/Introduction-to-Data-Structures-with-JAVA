@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=TimeComplexityDemo
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=n
+comment2.target=int\ findSum(int)
+numComments=3
