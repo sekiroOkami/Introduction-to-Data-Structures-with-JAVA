@@ -1,5 +1,6 @@
 package com.algorithms;
-
+import java.util.*;
+import java.util.stream.*;
 
 /**
  * Write a description of class ArrayUtil here.
@@ -60,4 +61,42 @@ public class ArrayUtil
         }
         return secondMax;
     }
+    
+    public void moveAllZeroToEndOfArray(int[] arr) {
+        /*
+         * move all 0 to end of it while maintaining the relative order of the non
+         * zero element
+         */
+        int [] result =
+        Arrays.stream(arr)
+            .boxed()
+            .sorted((a,b) -> {
+                if (a == 0 && b != 0) {
+                    return 1;
+                } else if (a != 0 && b == 0) {
+                    return -1;
+                } else {
+                    return 0;
+                }
+            })
+            .mapToInt(Integer::intValue)
+            .toArray();
+        
+        System.out.println(Arrays.toString(result));
+    }
+    
+    public void moveAllZeroToEndOfArray1(int[] arr) {
+        int nonZeroIndex = 0;
+        for (int num : arr) {
+            if (num != 0) {
+                arr[nonZeroIndex++] = num;
+            }
+        }
+        while (nonZeroIndex < arr.length) {
+                arr[nonZeroIndex++] = 0;
+            }
+        System.out.println(Arrays.toString(arr));
+    }
+    
+    
 }
