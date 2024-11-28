@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ArrayUtil
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ArrayUtil\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=numbers\ start\ end
+comment1.target=void\ reverseArray(int[],\ int,\ int)
+comment2.params=arr
+comment2.target=int\ findMinimum(int[])
+comment3.params=arr
+comment3.target=int[]\ removeEven(int[])
+comment4.params=arr
+comment4.target=int\ findSecondMax(int[])
+comment5.params=arr
+comment5.target=void\ moveAllZeroToEndOfArray(int[])
+comment6.params=arr
+comment6.target=void\ moveAllZeroToEndOfArray1(int[])
+numComments=7
